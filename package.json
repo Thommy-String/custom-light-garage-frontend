@@ -1,7 +1,7 @@
 {
-  "name": "frontend",
+  "name": "custom-light-garage",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "homepage": "https://Thommy-String.github.io/custom-light-garage-frontend",
   "scripts": {
