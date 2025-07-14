@@ -6,7 +6,7 @@ export default defineConfig({
   
   root: 'frontend',
  
-  base: '/custom-light-garage-frontend/',
+  base: '/custom-light-garage/',
   build: {
   
     outDir: '../docs',
