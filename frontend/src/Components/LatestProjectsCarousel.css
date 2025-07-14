@@ -1,0 +1,71 @@
+.carousel-wrapper {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.carousel-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  padding-bottom: 1rem; /* spazio per il caption */
+  /* nasconde la scrollbar (opzionale) */
+  scrollbar-width: none;
+}
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-item {
+  flex: 0 0 80%;             /* mostra il 80% di ogni card */
+  scroll-snap-align: start;  /* aggancio all’inizio di ogni item */
+  position: relative;
+}
+
+.carousel-item img,
+.carousel-item video {
+  width: 100%;
+  height: 500px;
+  display: block;
+  border-radius: 8px;
+}
+
+.carousel-caption {
+  margin-top: 0.5rem;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Pulsanti in basso a destra */
+.carousel-controls {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.carousel-btn {
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+.carousel-btn:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+.title {
+font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 0.228px;
+  line-height: 23px;
+  text-align: Left;
+  margin: 5px 32px;
+  color: #ffffff9a;
+}
