@@ -2,12 +2,12 @@ import { useState } from 'react'
 import './App.css'
 import Hero from './Components/Hero.jsx'
 import CardBlock from './Components/CardBlock.jsx'
-import LukasImage from '../../Luke-images/Lukas-working-closeShot.jpeg';
-import CeilingVideo from '../../Videos/Mercedes-Benz-LEDs.mp4'
+import LukasImage from '../Luke-images/Lukas-working-closeShot.jpeg';
+import CeilingVideo from '../Videos/Mercedes-Benz-LEDs.mp4'
 import VideoBlock from './Components/VideoBlock.jsx';
-import f10Cieling from '../../Luke-images/f10Ceiling.jpg'
-import f36cieling from '../../Luke-images/f36-cieling.jpg';
-import LukeProfilePic from '../../Luke-images/ProfileLuke.jpg';
+import f10Cieling from '../Luke-images/f10Ceiling.jpg'
+import f36cieling from '../Luke-images/f36-cieling.jpg';
+import LukeProfilePic from '../Luke-images/ProfileLuke.jpg';
 import LatestProjectsCarousel from './Components/LatestProjectsCarousel.jsx';
 import ContactUs from './Components/ContactUs.jsx';
 
