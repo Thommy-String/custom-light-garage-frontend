@@ -48,7 +48,7 @@
 
 .service-card-cta-button {
   padding: 14px 20px;
-  background-color: #484848;
+  background-color: var(--color-accent);
   color: #ffffff; /* Testo bianco */
   border: none;
   border-radius: 6px;

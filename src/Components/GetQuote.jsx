@@ -57,7 +57,7 @@ export default function GetQuote() {
         const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
         // 6. Apri la chat WhatsApp in una nuova scheda/finestra
-        window.open(whatsappURL, '_blank');
+        window.open(whatsappURL);
 
         // Optional: Reset the form fields after submission
         e.target.reset(); 
