@@ -1,0 +1,115 @@
+/* Stili Generali per il Form Container */
+.get-quote-wrapper {
+  background-color: #171717; /* Sfondo leggermente più chiaro del nero, si adatta bene al tema scuro */
+  padding: 30px;
+  border-radius: 10px; /* Angoli arrotondati per un look morbido */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Leggera ombra per profondità */
+  max-width: 500px; /* Larghezza massima per evitare che si estenda troppo */
+  margin: 50px 32px; /* Centra il form sulla pagina e aggiunge spazio sopra/sotto */
+  display: flex;
+  flex-direction: column; /* Gli elementi si impilano verticalmente */
+  gap: 15px; /* Spazio tra gli elementi del form */
+  font-family: 'Arial', sans-serif; /* Un font pulito e leggibile */
+  color: #e0e0e0; /* Colore testo chiaro */
+}
+
+/* Titolo del Form */
+.get-quote-title {
+  font-size: 1.8em; /* Dimensione maggiore per il titolo */
+  font-weight: 600;
+  color: #ffffff; /* Bianco puro per il titolo */
+  text-align: center;
+  margin-bottom: 20px; /* Spazio sotto il titolo */
+}
+
+/* Stili per Input di Testo e Textarea */
+.get-quote-wrapper input[type="text"],
+.get-quote-wrapper input[type="tel"],
+.get-quote-wrapper textarea,
+.get-quote-wrapper select {
+  width: 90%; /* Occupano tutta la larghezza disponibile */
+  padding: 12px 15px; /* Spazio interno per il testo */
+  border: 1px solid #444; /* Bordo sottile e discreto */
+  border-radius: 6px; /* Angoli arrotondati */
+  background-color: #333333; /* Sfondo scuro per gli input */
+  color: #f0f0f0; /* Testo chiaro all'interno degli input */
+  font-size: 1em;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transizione per hover/focus */
+}
+
+.get-quote-wrapper input[type="text"]::placeholder,
+.get-quote-wrapper input[type="tel"]::placeholder,
+.get-quote-wrapper textarea::placeholder,
+.get-quote-wrapper select option[value=""][disabled] {
+  color: #ffffff; /* Colore per i placeholder */
+}
+
+/* Stile Focus per Input e Textarea */
+.get-quote-wrapper input[type="text"]:focus,
+.get-quote-wrapper input[type="tel"]:focus,
+.get-quote-wrapper textarea:focus,
+.get-quote-wrapper select:focus {
+  border-color: #ffffff; /* Bordo blu vivido al focus */
+  
+  outline: none; /* Rimuove il contorno di focus predefinito del browser */
+}
+
+/* Stili specifici per il Select Dropdown */
+.get-quote-wrapper select {
+  /* Aggiungi una freccia personalizzata per il dropdown se necessario */
+  -webkit-appearance: none; /* Rimuove lo stile di default su WebKit */
+  -moz-appearance: none;    /* Rimuove lo stile di default su Mozilla */
+  appearance: none;         /* Rimuove lo stile di default */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23999999'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E"); /* Freccia SVG */
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 12px;
+  cursor: pointer;
+}
+
+/* Opzioni del Select (all'interno del dropdown) */
+.get-quote-wrapper select option {
+  background-color: #393939; /* Sfondo scuro per le opzioni */
+  color: #f0f0f0; /* Testo chiaro per le opzioni */
+}
+
+#service-type {
+    width: 100%;
+}
+
+/* Stile per il Pulsante di Invio */
+.get-quote-submit-button {
+  width: 100%;
+  padding: 14px 20px;
+  background-color: #6b6b6b; 
+  color: #ffffff; /* Testo bianco */
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1em;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Effetto hover/click */
+}
+
+.get-quote-submit-button:hover {
+  background-color: #272727; 
+  transform: translateY(1.5px); /* Leggero sollevamento */
+}
+
+.get-quote-submit-button:active {
+  background-color: #1a1919; /* Ancora più scuro al click */
+  transform: translateY(0); /* Ritorna alla posizione originale */
+}
+
+/* Stile per le label nascoste visivamente (se le usi) */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
