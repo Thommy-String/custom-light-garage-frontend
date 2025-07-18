@@ -51,7 +51,7 @@ function App() {
     <>
       <main>
         <VideoBlock
-          title="Ambient Light"
+          title="Custom Ambient Light"
           videoSrc={CeilingVideo}
           paragraph={<>Tailored illumination. Exclusive, <span className='pure-white'>high-end ambiance</span> for high-end cars.</>}
         />
