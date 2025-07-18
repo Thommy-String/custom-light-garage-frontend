@@ -1,6 +1,5 @@
-import { useState } from 'react'
+
 import './App.css'
-import Hero from './Components/Hero.jsx'
 import CardBlock from './Components/CardBlock.jsx'
 import LukasImage from '../Luke-images/Lukas-working-closeShot.jpeg';
 import CLGlogo from '../Luke-images/clg-logo.jpg'
@@ -48,14 +47,9 @@ const carouselItems = [
 ];
 
 function App() {
-
-
   return (
     <>
-
       <main>
-        
-
         <VideoBlock
           title="Custom Ambient Light"
           videoSrc={CeilingVideo}
